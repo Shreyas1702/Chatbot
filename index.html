@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="forminput">
+      <label for="formFileLg" class="form-label">Images </label>
+      <input
+        type="file"
+        name="link"
+        id="link"
+        multiple="multiple"
+        class="form-control form-control-lg"
+        accept="image/*"
+      />
+
+      <button onclick="uploadToPinata()">Submit</button>
+    </div> -->
+
+    <button id="none">9:00 - 9:30</button>
+    <button id="none">9:00 - 9:30</button>
+    <button id="none">9:00 - 9:30</button>
+    <button id="none">9:00 - 9:30</button>
+    <button id="none">9:00 - 9:30</button>
+    <button id="none">9:00 - 9:30</button>
+    <button id="none">9:00 - 9:30</button>
+    <button id="none">9:00 - 9:30</button>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+  <script>
+    // const uploadToPinata = async () => {
+    //   //   console.log("hello");
+    //   //   const file = document.getElementById("link").files;
+
+    //   //   for (var i = 0; i < file.length; i++) {
+    //   //     console.log(file[i].name);
+    //   //     let ImgHash;
+    //   //     try {
+    //   //       const formData = new FormData();
+    //   //       formData.append("file", file[i]);
+
+    //   //       console.log(file[i]);
+
+    //   const data = JSON.stringify({
+    //     pinataContent: {
+    //       locationName: "Suburban Apartment",
+    //       propertyType: "Apartment",
+    //       amount: "30",
+    //       description: "Spacious apartment in a quiet suburban neighborhood.",
+    //       generalInformation: {
+    //         nearbySurroundings: "Near parks and schools",
+    //         furnished: false,
+    //       },
+    //       areaSize: "1200 sqft", // Added areaSize field
+    //       no_of_rooms: 3,
+    //       no_of_bathrooms: 2,
+    //       image: [
+    //         "ipfs://bafkreih5aznjvttude6c3wbvqeebb6rlx5wkbzyppv7garjiubll2ceym4",
+    //         "ipfs://bafkreih5aznjvttude6c3wbvqeebb6rlx5wkbzyppv7garjiubll2ceym4",
+    //       ],
+    //     },
+    //     pinataMetadata: {
+    //       name: "metadata.json",
+    //     },
+    //   });
+
+    //   const response = await axios({
+    //     method: "post",
+    //     url: "https://api.pinata.cloud/pinning/pinJSONToIPFS",
+    //     data,
+    //     headers: {
+    //       pinata_api_key: `403a4001d5cc63b3ce0f`,
+    //       pinata_secret_api_key: `cd44bc63c6fdbabc149ce19412cc7c049d2ee4e5477ce8e9f824ef323a8a0c30`,
+    //       "Content-Type": "application/json",
+    //     },
+    //   });
+
+    //   console.log(response.data);
+
+    //       ImgHash = `https://gateway.pinata.cloud/ipfs/${response.data.IpfsHash}`;
+
+    //       console.log(ImgHash);
+    //     } catch (error) {
+    //       console.log(error);
+    //       console.log("Unable to Upload the Image");
+    //     }
+    //   }
+    //   if (file) {
+    //     let ImgHash;
+    //     try {
+    //       const formData = new FormData();
+    //       formData.append("file", file);
+
+    //       console.log(file);
+
+    //       const response = await axios({
+    //         method: "post",
+    //         url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
+    //         data: formData,
+    //         headers: {
+    //           pinata_api_key: `403a4001d5cc63b3ce0f`,
+    //           pinata_secret_api_key: `cd44bc63c6fdbabc149ce19412cc7c049d2ee4e5477ce8e9f824ef323a8a0c30`,
+    //           "Content-Type": "multipart/form-data",
+    //         },
+    //       });
+
+    //       ImgHash = `https://gateway.pinata.cloud/ipfs/${response.data.IpfsHash}`;
+
+    //       setPic(true);
+    //     } catch (error) {
+    //       console.log(error);
+    //       console.log("Unable to Upload the Image");
+    //     }
+
+    //     data.link = ImgHash;
+
+    //     console.log(data);
+    //   }
+    // };
+  </script>
+</html>
